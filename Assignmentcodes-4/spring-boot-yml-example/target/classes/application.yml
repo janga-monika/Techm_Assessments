@@ -1,0 +1,17 @@
+my:
+ prod:
+  id:5
+  code:AB
+  cost:4.5
+#List Data
+# version:
+ #  -V1
+ #  -V2
+ #  -V3
+#Map Data
+ #model:
+ # a1:6.6
+ # a2:6.7
+ # a3:9.8 
+
+  
