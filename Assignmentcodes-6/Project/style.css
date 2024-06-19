@@ -1,0 +1,87 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr; /* Main column */
+    grid-template-rows: auto auto; /* Top and main content rows */
+    grid-template-areas:
+        "top-frame"
+        "left-frame";
+    min-height: 100vh;
+}
+
+/* Top Frame Styles */
+.top-frame {
+    grid-area: top-frame;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.top-frame h1 {
+    margin-bottom: 10px;
+}
+
+.top-navbar ul {
+    list-style-type: none;
+}
+
+.top-navbar ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.top-navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.top-navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Left Frame Styles */
+.left-frame {
+    grid-area: left-frame;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.left-navbar ul {
+    list-style-type: none;
+}
+
+.left-navbar ul li {
+    margin-bottom: 5px;
+}
+
+.left-navbar ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.left-navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Frame Styles */
+.main-content {
+    grid-area: main-content;
+    padding: 20px;
+}
+
+.main-content h2 {
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    line-height: 1.6;
+}

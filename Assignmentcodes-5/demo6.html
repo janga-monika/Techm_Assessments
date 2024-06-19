@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aside Element Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        main {
+            flex: 3;
+            padding-right: 20px;
+        }
+        aside {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+    </header>
+
+    <div class="container">
+        <main>
+            <article>
+                <h2>Understanding the Aside Element in HTML5</h2>
+                <p><small>By Jane Doe | June 18, 2024</small></p>
+                <p>The <code>&lt;aside&gt;</code> element in HTML5 represents a section of a document that is tangentially related to the content around it. It's commonly used for sidebars, pull quotes, or advertisements.</p>
+                <p>Using the <code>&lt;aside&gt;</code> element correctly can improve the semantics and accessibility of your web pages, helping search engines and screen readers to better understand the structure of your content.</p>
+            </article>
+        </main>
+
+        <aside>
+            <h3>About the Author</h3>
+            <p>Jane Doe is a web developer with over 10 years of experience in building accessible and user-friendly websites.</p>
+
+            <h3>Related Articles</h3>
+            <ul>
+                <li><a href="#">Benefits of Semantic HTML</a></li>
+                <li><a href="#">How to Use the Article Element</a></li>
+                <li><a href="#">Understanding HTML5 Elements</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Blog</p>
+    </footer>
+</body>
+</html>

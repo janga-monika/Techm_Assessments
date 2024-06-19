@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Element Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        article {
+            margin-bottom: 20px;
+        }
+        article h2 {
+            color: #333;
+        }
+        article p {
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+    </header>
+
+    <div class="container">
+        <article>
+            <h2>Understanding the Article Element in HTML5</h2>
+            <p><small>By Jane Doe | June 18, 2024</small></p>
+            <p>The <code>&lt;article&gt;</code> element in HTML5 represents a self-contained composition in a document, page, or site that is intended to be independently distributable or reusable. This element is perfect for blog posts, news articles, or forum posts.</p>
+            <p>One of the benefits of using the <code>&lt;article&gt;</code> element is that it provides semantic meaning to the content it contains, making it easier for search engines and other technologies to understand and navigate the structure of a webpage.</p>
+        </article>
+
+        <article>
+            <h2>Benefits of Semantic HTML</h2>
+            <p><small>By John Smith | June 17, 2024</small></p>
+            <p>Semantic HTML introduces meaning to the web content. By using semantic elements, we can describe the content more accurately. This helps search engines, screen readers, and other technologies better interpret the content.</p>
+            <p>Examples of semantic elements include <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;aside&gt;</code>. Using these elements improves the accessibility and SEO of web pages.</p>
+        </article>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Blog</p>
+    </footer>
+</body>
+</html>

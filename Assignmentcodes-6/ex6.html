@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Checkbox</title>
+    <style>
+        .checkbox {
+            display: none;
+        }
+        .label {
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+            background-color: lightgrey;
+            border-radius: 10px;
+            position: relative;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .label::after {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background-color: white;
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.3s;
+        }
+        .checkbox:checked + .label {
+            background-color: lightgreen;
+        }
+        .checkbox:checked + .label::after {
+            transform: translateX(20px);
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="checkbox" class="checkbox">
+    <label for="checkbox" class="label"></label>
+</body>
+</html>

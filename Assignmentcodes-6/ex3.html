@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Empty Element</title>
+    <style>
+        div:empty {
+            display: none;
+        }
+        div:not(:empty) {
+            border: 2px solid black;
+            padding: 10px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div>This div is not empty.</div>
+</body>
+</html>
